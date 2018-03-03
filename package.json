@@ -1,0 +1,23 @@
+{
+  "name": "sync-music-apps",
+  "version": "0.1.0",
+  "description": "Sync liked music between music Apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Sync",
+    "Music",
+    "Apps"
+  ],
+  "author": "Yitong Ding",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^4.18.1"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "lodash": "^4.17.5"
+  }
+}

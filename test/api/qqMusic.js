@@ -4,6 +4,7 @@ const {
   likeMusic,
   login
 } = require("../../src/api/qqMusic");
+const User = require("../../src/models/User");
 
 const config = require("config");
 const IS_CI = config.get("test.isCi");
@@ -11,7 +12,7 @@ const USERNAME = config.get("test.qq.username");
 const PASSWORD = config.get("test.qq.password");
 jest.setTimeout(30000);
 
-let user = new user(USERNAME, PASSWORD);
+let user = new User(USERNAME, PASSWORD);
 describe("QQ Music Api", () => {
   test("login works", async () => {
     if (IS_CI) {

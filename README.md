@@ -15,7 +15,7 @@ This is a big problem now, especially in China, where people have to switch apps
 This project is intend to help you:
 
 1.  Sync these data across multiple music apps
-2.  Migrate these data from one app to another, so your new app won't have to learn you preferences from scratch.
+2.  Migrate these data from one app to another, so your new app won't have to learn you preferences from scratch.
 
 ## Plan
 

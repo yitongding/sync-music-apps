@@ -2,10 +2,10 @@ const get = require("lodash/get");
 const debug = require("debug")("api:qqMusic:likeMusic");
 const fetch = require("../../utils/fetch");
 
-const likeMusic = async (cookie, { songmid, songtype }) => {
+const likeMusic = async ({ cookie }, { songId, songType }) => {
   const params = {
-    midlist: songmid,
-    typelist: songtype || 13,
+    midlist: songId,
+    typelist: songType || 13,
     dirid: 201, // dir for 'I liked'
     formsender: 4, // !
     utf8: 1

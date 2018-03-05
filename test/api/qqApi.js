@@ -4,7 +4,7 @@ const {
   getUserLikedMusicListId,
   likeMusic,
   login
-} = require("../src/api/qqMusic");
+} = require("../../src/api/qqMusic");
 const USERNAME = config.get("test.qq.username");
 const PASSWORD = config.get("test.qq.password");
 jest.setTimeout(30000);
@@ -12,7 +12,7 @@ jest.setTimeout(30000);
 let cookie;
 
 describe("QQ Music Api", () => {
-  test("login works", async () => {
+  test.skip("login works", async () => {
     cookie = await login(USERNAME, PASSWORD);
     expect(cookie).toHaveProperty("pt4_token");
   });

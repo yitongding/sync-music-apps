@@ -4,18 +4,18 @@
   "description": "Sync liked music between music Apps",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "precommit": "lint-staged"
   },
-  "keywords": [
-    "Sync",
-    "Music",
-    "Apps"
-  ],
+  "keywords": ["Sync", "Music", "Apps"],
   "author": "Yitong Ding",
   "license": "MIT",
   "devDependencies": {
     "eslint": "^4.18.1",
-    "jest": "^22.4.2"
+    "husky": "^0.14.3",
+    "jest": "^22.4.2",
+    "lint-staged": "^7.0.0",
+    "prettier": "^1.11.1"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -25,10 +25,14 @@
     "lodash": "^4.17.5",
     "puppeteer": "^1.1.1"
   },
+  "prettier": {
+    "files": "*.js"
+  },
   "jest": {
     "testEnvironment": "node",
-    "testMatch": [
-      "<rootDir>/test/*.js"
-    ]
+    "testMatch": ["<rootDir>/test/**/*.js"]
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": ["prettier --write", "eslint --fix", "git add"]
   }
 }

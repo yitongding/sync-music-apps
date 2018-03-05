@@ -12,9 +12,9 @@ jest.setTimeout(30000);
 let cookie;
 
 describe("QQ Music Api", () => {
-  test.skip("login works", async () => {
+  test("login works", async () => {
     cookie = await login(USERNAME, PASSWORD);
-    expect(cookie).toContain("pt4_token");
+    expect(cookie).toHaveProperty("pt4_token");
   });
 
   test("likeMusic works", async () => {

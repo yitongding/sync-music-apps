@@ -1,1 +1,9 @@
-{}
+{
+  "test": {
+    "isCi": false,
+    "qq": {
+      "username": "123456789",
+      "password": "123456789"
+    }
+  }
+}

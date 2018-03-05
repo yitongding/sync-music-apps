@@ -1,5 +1,6 @@
 {
   "test": {
+    "isCi": "CIRCLECI",
     "qq": {
       "username": "QQ_USERNAME",
       "password": "QQ_PASSWORD"

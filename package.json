@@ -1,7 +1,7 @@
 {
   "name": "sync-music-apps",
   "version": "0.1.0",
-  "description": "Sync liked music between music Apps",
+  "description": "Sync liked music between music apps",
   "main": "index.js",
   "scripts": {
     "test": "jest",

@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "lint": "eslint --fix",
     "precommit": "lint-staged"
   },
   "keywords": ["Sync", "Music", "Apps"],
@@ -33,6 +34,6 @@
     "testMatch": ["<rootDir>/test/**/*.js"]
   },
   "lint-staged": {
-    "*.{js,json,css,md}": ["prettier --write", "eslint --fix", "git add"]
+    "*.{js,json,css,md}": ["prettier --write", "npm run lint", "git add"]
   }
 }
